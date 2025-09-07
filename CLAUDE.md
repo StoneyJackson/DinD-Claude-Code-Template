@@ -34,6 +34,17 @@ Since this is a template repository, you'll typically want to:
 2. Add your project-specific dependencies and configuration files
 3. Update this CLAUDE.md file with your project's specific build, test, and lint commands
 
+## Session Documentation
+
+Always end Claude Code sessions by asking: "Please generate a session summary"
+
+- Save summaries to `docs/claude-sessions/YYYY-MM-DD-topic.md`
+- Include key decisions, commands learned, and outcomes
+- Document any new tools, scripts, or processes introduced
+- Note follow-up items or unresolved issues
+
+This creates a searchable history of development decisions and Claude Code interactions.
+
 ## Current Project Status
 
 This repository contains only DevContainer configuration and no actual project code. Once you add your project files, you should update this document with:
