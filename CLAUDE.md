@@ -11,7 +11,7 @@ This is a Claude Code development template repository providing a pre-configured
 This repository uses DevContainer for consistent development environments:
 
 - **Base Environment**: Ubuntu-based container with Docker-in-Docker support
-- **Pre-installed Tools**: 
+- **Pre-installed Tools**:
   - Node.js LTS
   - Python 3 with pip and venv
   - Git, build tools, and common utilities
@@ -34,11 +34,16 @@ Since this is a template repository, you'll typically want to:
 2. Add your project-specific dependencies and configuration files
 3. Update this CLAUDE.md file with your project's specific build, test, and lint commands
 
+## Commit Message Standards
+
+This repository follows the [Conventional Commits](https://www.conventionalcommits.org/) specification. See [CONTRIBUTING.md](CONTRIBUTING.md) for complete commit message guidelines and examples.
+
 ## Session Documentation
 
 Always end Claude Code sessions by asking: "Please generate a session summary"
 
 - Save summaries to `docs/claude-sessions/YYYY-MM-DD-topic.md`
+- Include prompts and resulting actions.
 - Include key decisions, commands learned, and outcomes
 - Document any new tools, scripts, or processes introduced
 - Note follow-up items or unresolved issues

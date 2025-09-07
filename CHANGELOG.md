@@ -18,7 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Developer scripts directory structure
 - README.md file with template structure
 - CODE_OF_CONDUCT.md file based on Contributor Covenant 2.1
-- CONTRIBUTING.md file with template 
+- CONTRIBUTING.md file with template
+- Addopt Conventional Commit messages
 
 ### Changed
 

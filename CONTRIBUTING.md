@@ -49,6 +49,45 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 - Update documentation as needed
 - Follow existing code style and conventions
 
+### Commit Messages
+
+This project follows the [Conventional Commits](https://www.conventionalcommits.org/) specification. All commit messages must be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+**Types:**
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation only changes
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+- `refactor`: A code change that neither fixes a bug nor adds a feature
+- `perf`: A code change that improves performance
+- `test`: Adding missing tests or correcting existing tests
+- `chore`: Changes to the build process or auxiliary tools
+
+**Breaking Changes:**
+Breaking changes should be indicated by adding `!` after the type/scope or by including `BREAKING CHANGE:` in the footer:
+
+```
+feat!: remove deprecated login method
+
+BREAKING CHANGE: The legacy login() method has been removed. Use authenticateUser() instead.
+```
+
+**Examples:**
+- `feat: add user authentication`
+- `fix: resolve memory leak in data processing`
+- `docs: update API documentation`
+- `feat(auth): implement OAuth2 integration`
+- `feat!: change API response format`
+- `fix(api)!: remove support for legacy endpoints`
+
 ### Testing
 
 Run the test suite to ensure your changes don't break existing functionality:
@@ -61,7 +100,7 @@ Run the test suite to ensure your changes don't break existing functionality:
 
 - Follow the existing code style in the project
 - Use meaningful variable and function names
-- Write clear commit messages
+- Follow the Conventional Commits standard for commit messages
 - Keep changes focused and atomic
 
 ## License
