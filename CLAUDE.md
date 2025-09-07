@@ -38,6 +38,8 @@ Since this is the DinD Claude Code Template repository, you'll typically want to
 
 This repository follows the [Conventional Commits](https://www.conventionalcommits.org/) specification. See [CONTRIBUTING.md](CONTRIBUTING.md) for complete commit message guidelines and examples.
 
+**IMPORTANT**: All commits must be signed off using `git commit -s` to comply with the DCO (Developer Certificate of Origin) requirement.
+
 ## Session Documentation
 
 Always end Claude Code sessions by asking: "Please generate a session summary"

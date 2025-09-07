@@ -34,6 +34,42 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 5. Write a clear commit message
 6. Create a pull request
 
+## Developer Certificate of Origin (DCO)
+
+This project requires all contributors to sign off on their commits using the [Developer Certificate of Origin (DCO)](https://developercertificate.org/). This certifies that you have the right to submit your contribution under the project's license.
+
+### How to Sign Off
+
+Add the `-s` flag when making commits:
+
+```bash
+git commit -s -m "feat: add new feature"
+```
+
+This adds a `Signed-off-by:` line to your commit message:
+
+```
+feat: add new feature
+
+Signed-off-by: Your Name <your.email@example.com>
+```
+
+### What DCO Means
+
+By signing off, you certify that:
+
+1. The contribution was created in whole or in part by you and you have the right to submit it under the open source license indicated in the file
+2. The contribution is based upon previous work that, to the best of your knowledge, is covered under an appropriate open source license and you have the right under that license to submit that work with modifications
+3. The contribution was provided directly to you by some other person who certified (1), (2) or (3) and you have not modified it
+4. You understand and agree that this project and the contribution are public and that a record of the contribution is maintained indefinitely
+
+### Important Notes
+
+- **All commits** in your pull request must be signed off
+- You can sign off previous commits using: `git commit --amend -s`
+- For multiple commits, you can rebase: `git rebase HEAD~n --signoff`
+- Pull requests with unsigned commits will not be merged
+
 ## Development Process
 
 ### Setup
