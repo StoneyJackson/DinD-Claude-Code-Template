@@ -1,12 +1,20 @@
-This is a template project. To get started...
+This is a template project that provides...
+
+- ✅ DevContainer with Docker-in-Docker and Claude Code
+- ✅ MIT licensing (so relicense as you see fit)
+- ✅ Standard project files (README, CONTRIBUTING, CHANGELOG, CODE_OF_CONDUCT)
+- ✅ Tooling for REUSE and Claude
+
+To get started...
 
 - Update README.md
 - Use scripts/reuse to download the license you want, and update REUSE.toml
 - Add contact information to CODE_OF_CONDUCT.md
-- Update CONTRIBUTING.md with
+- Update CONTRIBUTING.md with contact information
 - Update .devcontainer/* files to install development tools and application stack
-- Get to work!
+- Update CLAUDE.md as needed
 
+---
 
 # Project Name
 
