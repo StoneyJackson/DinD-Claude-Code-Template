@@ -1,3 +1,5 @@
+# DinD Claude Code Template
+
 This is a template project that provides...
 
 - ✅ DevContainer with Docker-in-Docker and Claude Code
@@ -16,9 +18,9 @@ To get started...
 
 ---
 
-# Project Name
+# DinD Claude Code Template
 
-Brief description of what this project does and who it's for.
+A Docker-in-Docker development template optimized for Claude Code with pre-configured DevContainer environment and development tools.
 
 ## Table of Contents
 

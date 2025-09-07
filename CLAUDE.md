@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a Claude Code development template repository providing a pre-configured DevContainer environment. The repository is currently empty and serves as a starting point for development projects.
+This is the DinD Claude Code Template - a Docker-in-Docker development template repository providing a pre-configured DevContainer environment. The repository is currently empty and serves as a starting point for development projects.
 
 ## Development Environment
 
@@ -28,7 +28,7 @@ Usage: `./scripts/reuse [command]` (e.g., `./scripts/reuse lint`)
 
 ## Getting Started
 
-Since this is a template repository, you'll typically want to:
+Since this is the DinD Claude Code Template repository, you'll typically want to:
 
 1. Initialize your specific project type (e.g., `npm init`, `cargo init`, `python -m venv`)
 2. Add your project-specific dependencies and configuration files
