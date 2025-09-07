@@ -19,6 +19,9 @@ GitHub was not recognizing the project's license despite having a REUSE-complian
 ## Actions Taken
 1. Created symlink: `LICENSE -> LICENSES/MIT.txt`
 2. Verified symlink creation with `ls -la LICENSE`
+3. **Fix Applied**: Symlink didn't work on GitHub (showed path instead of content)
+4. Removed symlink and created standard `LICENSE` file
+5. Copied content from `LICENSES/MIT.txt` to `LICENSE`
 
 ## Commands Used
 ```bash
@@ -27,18 +30,27 @@ ls -la LICENSES/
 ls -la | grep -i license
 ln -s LICENSES/MIT.txt LICENSE
 ls -la LICENSE
+# After discovering symlink issue:
+rm LICENSE
+cp LICENSES/MIT.txt LICENSE
+git add LICENSE
+git commit -s -m "fix: replace LICENSE symlink with standard LICENSE file"
+git push
 ```
 
 ## Outcome
-- ✅ LICENSE symlink created successfully
-- ✅ Maintains REUSE compliance
-- ✅ Should work for both GitHub and GitLab license recognition
-- ✅ Single source of truth maintained in `LICENSES/MIT.txt`
+- ✅ Standard LICENSE file created successfully
+- ✅ Maintains REUSE compliance (both files exist)
+- ✅ GitHub now properly recognizes MIT license
+- ⚠️ Two copies of license text (trade-off for GitHub compatibility)
 
 ## Key Decisions
-- Chose symlink approach over copying to maintain single source of truth
-- Preserved REUSE specification compliance
-- Solution works across multiple Git hosting platforms
+- Initially chose symlink approach to maintain single source of truth
+- **Pivot**: Switched to standard LICENSE file when symlink failed on GitHub
+- Accepted duplication trade-off for universal platform compatibility
+- Preserved REUSE specification compliance with parallel `LICENSES/MIT.txt`
 
-## Follow-up Items
-- Commit and push changes to verify license recognition on remote platforms
+## Lessons Learned
+- GitHub web interface doesn't display symlink content, only the link path
+- Standard LICENSE file in repository root is most reliable approach
+- REUSE compliance can coexist with platform-specific requirements
